@@ -1,0 +1,2383 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Wayfair Hackathon data</Name>
+          <AnnotationText>Input = Wayfair Hackathon Data</AnnotationText>
+          <DefaultAnnotationText>Wayfair-Babson_HackathonData 2019.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="UniqueVisitID" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="VisitSource" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="BrowserName" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="OSName" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="Gender" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="IncomeRange" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="ViewedProductInVisit" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="ViewedSaleInVisit" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="TotalPageViews" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="PlacedSearch" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="SecondsOnSite" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="ClickedBanner" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="AddedToBasket" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+            <Field name="Purchased" size="254" source="File: C:\Users\amrit\OneDrive\Desktop\Wayfair\Wayfair-Babson_HackathonData 2019.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="462" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ViewedSaleInVisit] = 1</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>ViewedSaleInVisit</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-03-04 18:43:46</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2019-03-04 18:43:46</StartDate>
+              <EndDate>2019-03-04 18:43:46</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Viewed Sale?</AnnotationText>
+          <DefaultAnnotationText>[ViewedSaleInVisit] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="VisitDate" selected="True" />
+            <SelectField field="UniqueVisitID" selected="True" rename="ID" />
+            <SelectField field="VisitorGroup" selected="True" />
+            <SelectField field="PlatformUsed" selected="True" />
+            <SelectField field="VisitSource" selected="True" />
+            <SelectField field="BrowserName" selected="True" />
+            <SelectField field="OSName" selected="True" rename="Operating_System" />
+            <SelectField field="State" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="IncomeRange" selected="True" />
+            <SelectField field="ViewedProductInVisit" selected="True" type="Int16" size="2" />
+            <SelectField field="ViewedSaleInVisit" selected="True" type="Int16" size="2" />
+            <SelectField field="TotalPageViews" selected="True" type="Int64" size="8" />
+            <SelectField field="PlacedSearch" selected="True" type="Int16" size="2" />
+            <SelectField field="SecondsOnSite" selected="True" rename="MinutesOnSite" type="Int64" size="8" />
+            <SelectField field="ClickedBanner" selected="True" type="Int16" size="2" />
+            <SelectField field="AddedToBasket" selected="True" type="Int16" size="2" />
+            <SelectField field="Purchased" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Renaming Fields and Changing</Name>
+          <AnnotationText>Changing Datatype</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="150" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"UniqueVisitID","VisitorGroup","PlatformUsed","VisitSource","BrowserName","OSName","State","Gender","IncomeRange","ViewedProductInVisit","ViewedSaleInVisit","TotalPageViews","PlacedSearch","SecondsOnSite","ClickedBanner","AddedToBasket","Purchased"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name><![CDATA[Data Cleansing ]]></Name>
+          <AnnotationText>Cleansing</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="UniqueVisitID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="OSName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ViewedProductInVisit" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ViewedSaleInVisit" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="TotalPageViews" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlacedSearch" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="SecondsOnSite" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ClickedBanner" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="AddedToBasket" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Purchased" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="582" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ClickedBanner] = 1</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>ClickedBanner</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-03-04 18:43:55</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2019-03-04 18:43:55</StartDate>
+              <EndDate>2019-03-04 18:43:55</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Viewed Sale 
+Clicked Banner?</AnnotationText>
+          <DefaultAnnotationText>[ClickedBanner] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="822" y="1110" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ClickedBanner] = 1</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>ClickedBanner</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-03-04 18:44:12</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2019-03-04 18:44:12</StartDate>
+              <EndDate>2019-03-04 18:44:12</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Didn't View Sale 
+Clicked Banner?</AnnotationText>
+          <DefaultAnnotationText>[ClickedBanner] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1158" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Purchased] = 1</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Purchased</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-03-04 22:05:39</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2019-03-04 22:05:39</StartDate>
+              <EndDate>2019-03-04 22:05:39</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Viewed Sale AND Clicked Banner 
+Purchased? - Shows effectiveness of Sale and Banner</AnnotationText>
+          <DefaultAnnotationText>[Purchased] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1506" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\amrit\AppData\Local\Temp\Engine_1376_734f3324da284adfa41796510427fd6f_\Engine_1260_839348ac150543bbb1901e7affb272e9_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings>
+        <Position x="1410" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">VisitDate=False,ID=False,VisitorGroup=True,PlatformUsed=True,VisitSource=True,BrowserName=True,Operating_System=False,State=True,Gender=True,IncomeRange=True,ViewedProductInVisit=False,ViewedSaleInVisit=False,TotalPageViews=True,PlacedSearch=False,MinutesOnSite=True,ClickedBanner=False,AddedToBasket=False,Purchased=False</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Histograms of Demographic, Psychographic and Behavioral Data</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Interactive">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+            <Field name="Report" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="14" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Field Category" size="64" source="Formula: (Multiple Sources)" type="String" />
+            <Field name="Min" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Max" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Median" source="Summarize: Median - Value" type="Double" />
+            <Field name="Std. Dev." source="Summarize: StdDev - Value" type="Double" />
+            <Field name="Percent Missing" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="Unique Values" source="Summarize: (Multiple Sources)" type="Int64" />
+            <Field name="Mean" source="Summarize: Avg - Value" type="Double" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+            <Field name="Remarks" size="1073741823" source="Summarize: Concat - Value" type="V_WString" />
+            <Field name="Shortest_Value" size="254" source="Summarize: Shortest - Value" type="V_String" />
+            <Field name="Longest_Value" size="254" source="Summarize: Longest - Value" type="V_String" />
+            <Field name="MinValueCount" source="Summarize: Count - Value" type="Int64" />
+            <Field name="MaxValueCount" source="Summarize: Count - Value" type="Int64" />
+            <Field name="Latest Date" size="64" source="Formula: DateTimeFormat([Max_Value],&quot;%m/%d/%Y %H:00&quot;)" type="String" />
+            <Field name="Earliest Date" size="64" source="Formula: DateTimeFormat([Min_Value],&quot;%m/%d/%Y %H:00&quot;)" type="String" />
+            <Field name="Interval" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="ObjType" size="12" source="Summarize: GroupBy - ObjType" type="String" />
+            <Field name="Avg_AreaSqMi" source="Summarize: Avg - AreaSqMi" type="Double" />
+            <Field name="Avg_LengthMi" source="Summarize: Avg - LengthMi" type="Double" />
+            <Field name="Avg_NumPoints" source="Summarize: Avg - NumPoints" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1506" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PlacedSearch" action="Sum" rename="Sum_PlacedSearch" />
+            <SummarizeField field="AddedToBasket" action="Sum" rename="Sum_AddedToBasket" />
+            <SummarizeField field="TotalPageViews" action="Median" rename="Median_TotalPageViews" />
+            <SummarizeField field="MinutesOnSite" action="Median" rename="Median_MinutesOnSite" />
+            <SummarizeField field="IncomeRange" action="GroupBy" rename="IncomeRange" />
+            <SummarizeField field="Gender" action="GroupBy" rename="Gender" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_PlacedSearch" source="Summarize: Sum - PlacedSearch" type="Int64" />
+            <Field name="Sum_AddedToBasket" source="Summarize: Sum - AddedToBasket" type="Int64" />
+            <Field name="Median_TotalPageViews" source="Summarize: Median - TotalPageViews" type="Double" />
+            <Field name="Median_MinutesOnSite" source="Summarize: Median - MinutesOnSite" type="Double" />
+            <Field name="IncomeRange" size="254" source="Summarize: GroupBy - IncomeRange" type="V_String" />
+            <Field name="Gender" size="254" source="Summarize: GroupBy - Gender" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="IncomeRange" order="Asc" />
+            <Field field="Gender" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1614" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\amrit\AppData\Local\Temp\Engine_1376_734f3324da284adfa41796510427fd6f_\Engine_1260_4c628c8bc7f04d4bbe5749eac8dac966_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1410" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[IncomeRange] != "Unknown" && [Gender] != "Unknown"
+]]></Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-03-04 15:34:16</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-03-04 15:34:16</StartDate>
+              <EndDate>2019-03-04 15:34:16</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter out data with unknown gender and Income Range</AnnotationText>
+          <DefaultAnnotationText><![CDATA[[IncomeRange] != "Unknown" && [Gender] != "Unknown"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1686" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\amrit\AppData\Local\Temp\Engine_1376_734f3324da284adfa41796510427fd6f_\Engine_1260_160dfd73f1d34457ad3021e888df3cf9_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings>
+        <Position x="1410" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ChiSquare">False</Value>
+          <Value name="Var1 Chi">ID</Value>
+          <Value name="Var2 Chi">ID</Value>
+          <Value name="NoChiSquare">True</Value>
+          <Value name="Var1">PlatformUsed</Value>
+          <Value name="Var2">BrowserName</Value>
+          <Value name="Var3">Operating_System</Value>
+          <Value name="Var4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Data">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_PlatformUsed" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_BrowserName" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field name="InputField_Operating_System" size="5424" source="Summarize: GroupBy - __ContingencyRowField" type="String" />
+            <Field name="Frequency" source="Summarize: Count - __ContingencyRowField" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: [Frequency] / [Total] * 100" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ContingencyTable.yxmc" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1686" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\amrit\AppData\Local\Temp\Engine_1376_734f3324da284adfa41796510427fd6f_\Engine_1260_fec099866b644d16b0801bf41e87bd3a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings>
+        <Position x="1410" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ChiSquare">False</Value>
+          <Value name="Var1 Chi">ID</Value>
+          <Value name="Var2 Chi">ID</Value>
+          <Value name="NoChiSquare">True</Value>
+          <Value name="Var1">Gender</Value>
+          <Value name="Var2">IncomeRange</Value>
+          <Value name="Var3">VisitorGroup</Value>
+          <Value name="Var4">VisitSource</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Data">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_Gender" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_IncomeRange" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_VisitorGroup" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field name="InputField_VisitSource" size="5424" source="Summarize: GroupBy - __ContingencyRowField" type="String" />
+            <Field name="Frequency" source="Summarize: Count - __ContingencyRowField" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: [Frequency] / [Total] * 100" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ContingencyTable.yxmc" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\amrit\AppData\Local\Temp\Engine_1376_734f3324da284adfa41796510427fd6f_\Engine_1260_fbdfc5e8d9b24c77a8ed740b871800fe_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check frequency of all variables of users who reacted to the sale</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings>
+        <Position x="882" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="FrequencyFields">&lt;Field field="VisitorGroup" selected="True" /&gt;&lt;Field field="PlatformUsed" selected="True" /&gt;&lt;Field field="VisitSource" selected="True" /&gt;&lt;Field field="BrowserName" selected="True" /&gt;&lt;Field field="Gender" selected="True" /&gt;&lt;Field field="IncomeRange" selected="True" /&gt;&lt;Field field="ViewedProductInVisit" selected="True" /&gt;&lt;Field field="ViewedSaleInVisit" selected="True" /&gt;&lt;Field field="PlacedSearch" selected="True" /&gt;&lt;Field field="ClickedBanner" selected="True" /&gt;&lt;Field field="AddedToBasket" selected="True" /&gt;&lt;Field field="Purchased" selected="True" /&gt;&lt;Field field="*Unknown" selected="False" /&gt;</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Data">
+          <RecordInfo>
+            <Field name="Field_Name" size="20" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Field_Value" size="254" source="Summarize: GroupBy - Value" type="V_String" />
+            <Field name="Frequency" source="Summarize: Count - Value" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: ([Frequency]/[Total Records])*100" type="FixedDecimal" />
+            <Field name="Cumulative Frequency" source="RunningTotal: Total of Frequency" type="Int64" />
+            <Field name="Cumulative Percent" scale="2" size="19" source="Formula: ([RunTot_Frequency]/[Total Records])*100" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Name" size="20" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Message" size="254" source="Formula: IF [Type] IN (&quot;Byte&quot;, &quot;Int16&quot;, &quot;Int32&quot;, &quot;Int64&quot;)&#xA;AND [UniqueValues] &lt;= 10&#xA;THEN 'This field has a small number of unique values, and appears to be categorical. Consider changing the field data type to &quot;string&quot; if you intend to use it as a categorical field later in your processing.'&#xA;ELSE &quot;&quot;&#xA;ENDIF" type="String" />
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Frequency.yxmc" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings>
+        <Position x="942" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">FM_Purchased</Value>
+          <Value name="Y Var">Purchased</Value>
+          <Value name="X Vars">VisitorGroup + PlatformUsed + VisitSource + BrowserName + Gender + IncomeRange + ViewedProductInVisit + PlacedSearch + ClickedBanner</Value>
+          <Value name="Num Trees">300</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Forest Model ro predict whether user will purchase</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings>
+        <Position x="786" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">60</Value>
+          <Value name="validation pct">40</Value>
+          <Value name="rand seed">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Random sample of data to train the model and test the model</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Estimation">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Validation">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Holdout">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="Score">
+        <Position x="1134" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">Probability_of_Purchase</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">True</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">25600</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Score the model</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VisitDate" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="ID" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="VisitorGroup" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="PlatformUsed" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="VisitSource" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="BrowserName" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Operating_System" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="State" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Gender" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="IncomeRange" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="ViewedProductInVisit" source="R-DATA:" type="Int32" />
+            <Field name="ViewedSaleInVisit" source="R-DATA:" type="Int32" />
+            <Field name="TotalPageViews" source="R-DATA:" type="Double" />
+            <Field name="PlacedSearch" source="R-DATA:" type="Int32" />
+            <Field name="MinutesOnSite" source="R-DATA:" type="Double" />
+            <Field name="ClickedBanner" source="R-DATA:" type="Int32" />
+            <Field name="AddedToBasket" source="R-DATA:" type="Int32" />
+            <Field name="Purchased" source="R-DATA:" type="Int32" />
+            <Field name="Probability_of_Purchase" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1374" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\amrit\AppData\Local\Temp\Engine_1376_734f3324da284adfa41796510427fd6f_\Engine_1260_ff1b3ea35d644f92be3f0f31c4c470de_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1230" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Probability_of_Purchase] &gt;= 0.5 &amp;&amp; [Purchased] ==1 THEN &quot;True_Positive&quot;  &#xA;ELSEIF [Probability_of_Purchase] &lt;0.5 &amp;&amp; [Purchased] == 0 THEN &quot;True_Negative&quot;&#xA;ELSEIF [Probability_of_Purchase] &lt;0.5 &amp;&amp; [Purchased] == 1 THEN &quot;False_Negative&quot;&#xA;ELSE &quot;False_Positive&quot;&#xA;ENDIF" field="Accuracy_of_Prediction" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Accuracy</AnnotationText>
+          <DefaultAnnotationText>Accuracy_of_Prediction = IF [Probability_of_Purchase] &gt;= 0.5 &amp;&amp; [Purchased] ==1 ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VisitDate" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="ID" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="VisitorGroup" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="PlatformUsed" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="VisitSource" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="BrowserName" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Operating_System" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="State" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Gender" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="IncomeRange" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="ViewedProductInVisit" source="R-DATA:" type="Int32" />
+            <Field name="ViewedSaleInVisit" source="R-DATA:" type="Int32" />
+            <Field name="TotalPageViews" source="R-DATA:" type="Double" />
+            <Field name="PlacedSearch" source="R-DATA:" type="Int32" />
+            <Field name="MinutesOnSite" source="R-DATA:" type="Double" />
+            <Field name="ClickedBanner" source="R-DATA:" type="Int32" />
+            <Field name="AddedToBasket" source="R-DATA:" type="Int32" />
+            <Field name="Purchased" source="R-DATA:" type="Int32" />
+            <Field name="Probability_of_Purchase" source="R-DATA:" type="Double" />
+            <Field name="Accuracy_of_Prediction" size="2147483647" source="Formula: IF [Probability_of_Purchase] &gt;= 0.5 &amp;&amp; [Purchased] ==1 THEN &quot;True_Positive&quot;  &#xA;ELSEIF [Probability_of_Purchase] &lt;0.5 &amp;&amp; [Purchased] == 0 THEN &quot;True_Negative&quot;&#xA;ELSEIF [Probability_of_Purchase] &lt;0.5 &amp;&amp; [Purchased] == 1 THEN &quot;False_Negative&quot;&#xA;ELSE &quot;False_Positive&quot;&#xA;ENDIF" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1446" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\amrit\AppData\Local\Temp\Engine_1376_734f3324da284adfa41796510427fd6f_\Engine_1260_9a41cd2eb58043aab8c1a25a27678cb3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings>
+        <Position x="1350" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="FrequencyFields">&lt;Field field="Purchased" selected="True" /&gt;&lt;Field field="Accuracy_of_Prediction" selected="True" /&gt;&lt;Field field="*Unknown" selected="False" /&gt;</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Check the Accuracy of the model</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Data">
+          <RecordInfo>
+            <Field name="Field_Name" size="22" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Field_Value" size="2147483647" source="Summarize: GroupBy - Value" type="V_String" />
+            <Field name="Frequency" source="Summarize: Count - Value" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: ([Frequency]/[Total Records])*100" type="FixedDecimal" />
+            <Field name="Cumulative Frequency" source="RunningTotal: Total of Frequency" type="Int64" />
+            <Field name="Cumulative Percent" scale="2" size="19" source="Formula: ([RunTot_Frequency]/[Total Records])*100" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Name" size="22" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Message" size="254" source="Formula: IF [Type] IN (&quot;Byte&quot;, &quot;Int16&quot;, &quot;Int32&quot;, &quot;Int64&quot;)&#xA;AND [UniqueValues] &lt;= 10&#xA;THEN 'This field has a small number of unique values, and appears to be categorical. Consider changing the field data type to &quot;string&quot; if you intend to use it as a categorical field later in your processing.'&#xA;ELSE &quot;&quot;&#xA;ENDIF" type="String" />
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Frequency.yxmc" />
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" field="Gender" size="254" type="V_String" />
+            <FormulaField expression="IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" field="IncomeRange" size="254" type="V_String" />
+            <FormulaField expression="IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" field="State" size="254" type="V_String" />
+            <FormulaField expression="[MinutesOnSite]/60" field="MinutesonSite" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get rid of nulls</AnnotationText>
+          <DefaultAnnotationText>Gender = IF [Gender] == ""  THEN "Unknown"
+ELSE [Gender]
+ENDIF
+IncomeRange = IF ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="122">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1542" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Percent" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Sort by descending percent</Name>
+          <AnnotationText />
+          <DefaultAnnotationText>Percent - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_PlatformUsed" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_BrowserName" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field name="InputField_Operating_System" size="5424" source="Summarize: GroupBy - __ContingencyRowField" type="String" />
+            <Field name="Frequency" source="Summarize: Count - __ContingencyRowField" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: [Frequency] / [Total] * 100" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Percent" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="123">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1542" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Percent" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>Percent - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_Gender" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_IncomeRange" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_VisitorGroup" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field name="InputField_VisitSource" size="5424" source="Summarize: GroupBy - __ContingencyRowField" type="String" />
+            <Field name="Frequency" source="Summarize: Count - __ContingencyRowField" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: [Frequency] / [Total] * 100" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Percent" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1122" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\amrit\AppData\Local\Temp\Engine_1376_734f3324da284adfa41796510427fd6f_\Engine_1260_f81253a5b3db49eaaf8a9a8d5dbb65e4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Performance of the model and the error rate</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="858" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\amrit\OneDrive\Desktop\Wayfair\Tableau Input\Viewed Sale AND Clicked Banner.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output users who Viewed Sale AND Clicked Banner</AnnotationText>
+          <DefaultAnnotationText>Viewed Sale AND Clicked Banner.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="127">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="870" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\amrit\OneDrive\Desktop\Wayfair\Tableau Input\Viewed Sale and Didnt Click Banner.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Viewed Sale and Didnt Click Banner.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="128">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1014" y="990" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\amrit\OneDrive\Desktop\Wayfair\Tableau Input\Didnt View Sale and Clicked Banner.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Didnt View Sale and Clicked Banner.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="130">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1278" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="131">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1374" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\amrit\OneDrive\Desktop\Wayfair\Tableau Input\Clicked Banner.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Clicked Banner.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="132">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1530" y="42" width="228" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This is the model that has the 99.8% specificity accuracy in predicting that a customer will not purchase</Text>
+          <Font name="Cambria" size="11.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="2" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="133">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1806" y="474" width="288" height="216" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Used to check how buyer demographic and behavior is different between non-buyers and buyers for users who have seen sale and clicked banner</Text>
+          <Font name="Cambria" size="11.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="2" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="135">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="846" y="402" width="192" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Input to our Tableau Workbook</Text>
+          <Font name="Cambria" size="11.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="2" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="136">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1482" y="1026" width="228" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Exploring all the people who clicked the banner</Text>
+          <Font name="Cambria" size="11.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="2" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="137">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1518" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>
+          </TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="138">
+      <GuiSettings>
+        <Position x="1422" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">VisitDate=False,ID=False,VisitorGroup=True,PlatformUsed=True,VisitSource=True,BrowserName=True,Operating_System=False,State=True,Gender=True,IncomeRange=True,ViewedProductInVisit=False,ViewedSaleInVisit=False,TotalPageViews=True,PlacedSearch=False,MinutesOnSite=True,ClickedBanner=False,AddedToBasket=False,Purchased=False</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Interactive">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+            <Field name="Report" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="14" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Field Category" size="64" source="Formula: (Multiple Sources)" type="String" />
+            <Field name="Min" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Max" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Median" source="Summarize: Median - Value" type="Double" />
+            <Field name="Std. Dev." source="Summarize: StdDev - Value" type="Double" />
+            <Field name="Percent Missing" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="Unique Values" source="Summarize: (Multiple Sources)" type="Int64" />
+            <Field name="Mean" source="Summarize: Avg - Value" type="Double" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+            <Field name="Remarks" size="1073741823" source="Summarize: Concat - Value" type="V_WString" />
+            <Field name="Shortest_Value" size="254" source="Summarize: Shortest - Value" type="V_String" />
+            <Field name="Longest_Value" size="254" source="Summarize: Longest - Value" type="V_String" />
+            <Field name="MinValueCount" source="Summarize: Count - Value" type="Int64" />
+            <Field name="MaxValueCount" source="Summarize: Count - Value" type="Int64" />
+            <Field name="Latest Date" size="64" source="Formula: DateTimeFormat([Max_Value],&quot;%m/%d/%Y %H:00&quot;)" type="String" />
+            <Field name="Earliest Date" size="64" source="Formula: DateTimeFormat([Min_Value],&quot;%m/%d/%Y %H:00&quot;)" type="String" />
+            <Field name="Interval" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="ObjType" size="12" source="Summarize: GroupBy - ObjType" type="String" />
+            <Field name="Avg_AreaSqMi" source="Summarize: Avg - AreaSqMi" type="Double" />
+            <Field name="Avg_LengthMi" source="Summarize: Avg - LengthMi" type="Double" />
+            <Field name="Avg_NumPoints" source="Summarize: Avg - NumPoints" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="139">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1518" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PlacedSearch" action="Sum" rename="Sum_PlacedSearch" />
+            <SummarizeField field="AddedToBasket" action="Sum" rename="Sum_AddedToBasket" />
+            <SummarizeField field="TotalPageViews" action="Median" rename="Median_TotalPageViews" />
+            <SummarizeField field="MinutesOnSite" action="Median" rename="Median_MinutesOnSite" />
+            <SummarizeField field="IncomeRange" action="GroupBy" rename="IncomeRange" />
+            <SummarizeField field="Gender" action="GroupBy" rename="Gender" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_PlacedSearch" source="Summarize: Sum - PlacedSearch" type="Int64" />
+            <Field name="Sum_AddedToBasket" source="Summarize: Sum - AddedToBasket" type="Int64" />
+            <Field name="Median_TotalPageViews" source="Summarize: Median - TotalPageViews" type="Double" />
+            <Field name="Median_MinutesOnSite" source="Summarize: Median - MinutesOnSite" type="Double" />
+            <Field name="IncomeRange" size="254" source="Summarize: GroupBy - IncomeRange" type="V_String" />
+            <Field name="Gender" size="254" source="Summarize: GroupBy - Gender" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="IncomeRange" order="Asc" />
+            <Field field="Gender" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="140">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1626" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile />
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="141">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1422" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[IncomeRange] != "Unknown" && [Gender] != "Unknown"
+]]></Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Gender</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-03-04 15:34:16</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-03-04 15:34:16</StartDate>
+              <EndDate>2019-03-04 15:34:16</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter out data with unknown gender and Income Range</AnnotationText>
+          <DefaultAnnotationText><![CDATA[[IncomeRange] != "Unknown" && [Gender] != "Unknown"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="VisitDate" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitorGroup" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="PlatformUsed" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="VisitSource" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="BrowserName" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Operating_System" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="State" size="254" source="Formula: IF [State] == &quot;&quot; THEN &quot;Unknown&quot;  &#xA;ELSE [State]&#xA;ENDIF" type="V_String" />
+            <Field name="Gender" size="254" source="Formula: IF [Gender] == &quot;&quot;  THEN &quot;Unknown&quot;&#xA;ELSE [Gender]&#xA;ENDIF" type="V_String" />
+            <Field name="IncomeRange" size="254" source="Formula: IF [IncomeRange] == &quot;&quot; THEN &quot;Unknown&quot;&#xA;ELSE [IncomeRange]&#xA;ENDIF" type="V_String" />
+            <Field name="ViewedProductInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="ViewedSaleInVisit" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="TotalPageViews" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="PlacedSearch" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="MinutesOnSite" source="Formula: [MinutesOnSite]/60" type="Int64" />
+            <Field name="ClickedBanner" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="AddedToBasket" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="Purchased" source="Formula: [_CurrentField_]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="142">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1698" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>
+          </TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="143">
+      <GuiSettings>
+        <Position x="1422" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ChiSquare">False</Value>
+          <Value name="Var1 Chi">VisitDate</Value>
+          <Value name="Var2 Chi">VisitDate</Value>
+          <Value name="NoChiSquare">True</Value>
+          <Value name="Var1">PlatformUsed</Value>
+          <Value name="Var2">BrowserName</Value>
+          <Value name="Var3">Operating_System</Value>
+          <Value name="Var4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Data">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_PlatformUsed" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_BrowserName" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field name="InputField_Operating_System" size="5424" source="Summarize: GroupBy - __ContingencyRowField" type="String" />
+            <Field name="Frequency" source="Summarize: Count - __ContingencyRowField" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: [Frequency] / [Total] * 100" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ContingencyTable.yxmc" />
+    </Node>
+    <Node ToolID="144">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1698" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>
+          </TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="145">
+      <GuiSettings>
+        <Position x="1422" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ChiSquare">False</Value>
+          <Value name="Var1 Chi">ID</Value>
+          <Value name="Var2 Chi">ID</Value>
+          <Value name="NoChiSquare">True</Value>
+          <Value name="Var1">Gender</Value>
+          <Value name="Var2">IncomeRange</Value>
+          <Value name="Var3">VisitorGroup</Value>
+          <Value name="Var4">VisitSource</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Data">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_Gender" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_IncomeRange" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_VisitorGroup" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field name="InputField_VisitSource" size="5424" source="Summarize: GroupBy - __ContingencyRowField" type="String" />
+            <Field name="Frequency" source="Summarize: Count - __ContingencyRowField" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: [Frequency] / [Total] * 100" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ContingencyTable.yxmc" />
+    </Node>
+    <Node ToolID="146">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1554" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Percent" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>Percent - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_PlatformUsed" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_BrowserName" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field name="InputField_Operating_System" size="5424" source="Summarize: GroupBy - __ContingencyRowField" type="String" />
+            <Field name="Frequency" source="Summarize: Count - __ContingencyRowField" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: [Frequency] / [Total] * 100" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Percent" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="147">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1554" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Percent" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>Percent - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_Gender" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_IncomeRange" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field description="TextToColumns: Parsed from __ContingencyColumnField" name="InputField_VisitorGroup" size="5424" source="TextToColumns: Parsed from __ContingencyColumnField" type="String" />
+            <Field name="InputField_VisitSource" size="5424" source="Summarize: GroupBy - __ContingencyRowField" type="String" />
+            <Field name="Frequency" source="Summarize: Count - __ContingencyRowField" type="Int64" />
+            <Field name="Percent" scale="2" size="19" source="Formula: [Frequency] / [Total] * 100" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Percent" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="148">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="858" y="714" width="228" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>To understand why people would view the sale but not click any banners</Text>
+          <Font name="Cambria" size="11.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="2" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="False" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output26" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="False" />
+      <Destination ToolID="127" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="128" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="18" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="143" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="145" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="138" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="141" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Interactive" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Data" />
+      <Destination ToolID="122" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Data" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Data" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="80" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Validation" />
+      <Destination ToolID="80" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Reports" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Estimation" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Data" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="122" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="138" Connection="Interactive" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="Output" />
+      <Destination ToolID="140" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="141" Connection="True" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="143" Connection="Data" />
+      <Destination ToolID="146" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Data" />
+      <Destination ToolID="147" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="146" Connection="Output" />
+      <Destination ToolID="142" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="147" Connection="Output" />
+      <Destination ToolID="144" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Numeric Up Down (55)</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Wayfair workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (54)</Name>
+          <ToolId value="54" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="127" Selected="True" />
+        <Tool ToolId="6" Selected="True" />
+        <Tool ToolId="20" Selected="False" />
+        <Tool ToolId="32" Selected="False" />
+        <Tool ToolId="74" Selected="True" />
+        <Tool ToolId="72" Selected="True" />
+        <Tool ToolId="57" Selected="True" />
+        <Tool ToolId="56" Selected="False" />
+        <Tool ToolId="58" Selected="False" />
+        <Tool ToolId="59" Selected="True" />
+        <Tool ToolId="63" Selected="False" />
+        <Tool ToolId="69" Selected="True" />
+        <Tool ToolId="125" Selected="False" />
+        <Tool ToolId="80" Selected="True" />
+        <Tool ToolId="81" Selected="False" />
+        <Tool ToolId="107" Selected="True" />
+        <Tool ToolId="106" Selected="False" />
+        <Tool ToolId="18" Selected="True" />
+        <Tool ToolId="126" Selected="True" />
+        <Tool ToolId="131" Selected="True" />
+        <Tool ToolId="128" Selected="True" />
+        <Tool ToolId="137" Selected="False" />
+        <Tool ToolId="138" Selected="True" />
+        <Tool ToolId="140" Selected="False" />
+        <Tool ToolId="142" Selected="False" />
+        <Tool ToolId="143" Selected="True" />
+        <Tool ToolId="144" Selected="False" />
+        <Tool ToolId="145" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
